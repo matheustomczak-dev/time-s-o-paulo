@@ -1,5 +1,17 @@
 #escudo{
-width: 200px;
-height: 200px;
+width: 150px;
+height: 150px;
+
+}
+
+#navbar{
+background-color: black;
+color: aliceblue;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
