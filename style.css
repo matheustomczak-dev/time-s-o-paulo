@@ -1,17 +1,117 @@
-#escudo{
-width: 150px;
-height: 150px;
+body{
+    margin:0;
+    background:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+#LOGOMARCA{
+    width:75px;
+    height:75px;
 }
 
 #navbar{
-background-color: black;
-color: aliceblue;
+    background:black;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
 
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 20px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#links{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+#links li{
+    cursor:pointer;
+    transition:.3s;
+}
+
+#links li:hover{
+    color:red;
+}
+
+#notícias{
+    background:black;
+    color:white;
+    padding:40px;
+    margin:40px auto;
+    max-width:1200px;
+    border-radius:12px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.noticia{
+    background:#111;
+    border-radius:12px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.noticia:hover{
+    transform:scale(1.03);
+}
+
+.img_notícia{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.noticia h3{
+    padding:15px;
+    margin:0;
+}
+
+.noticia p{
+    padding:0 15px 15px;
+    margin:0;
+    font-size:14px;
+    color:#ccc;
+}
+
+#elenco{
+    max-width:1200px;
+    margin:40px auto;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.jogadores{
+    text-align:center;
+}
+
+.jogadores img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid black;
+}
+
+.jogadores p{
+    margin-top:10px;
+    font-size:14px;
+}
+
+#footer{
+text-align:center;
+display:flex;
+
+}
+
+#mascote{
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 90px;
+
 
 }
